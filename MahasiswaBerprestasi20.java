@@ -1,6 +1,11 @@
 public class MahasiswaBerprestasi20 {
-    Mahasiswa20 [] listMhs = new Mahasiswa20 [5];
+    Mahasiswa20[] listMhs; // hapus [5], jadi dinamis
     int idx;
+
+    // tambah konstruktor berparameter
+    MahasiswaBerprestasi20(int jumlah) {
+        listMhs = new Mahasiswa20[jumlah];
+    }
 
     void tambah (Mahasiswa20 m) {
         if (idx < listMhs.length) {
