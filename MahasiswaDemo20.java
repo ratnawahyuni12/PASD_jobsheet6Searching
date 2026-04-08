@@ -3,8 +3,14 @@ import java.util.Scanner;
 public class MahasiswaDemo20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MahasiswaBerprestasi20 list = new MahasiswaBerprestasi20();
-        int jumMhs = 5;
+
+        // input jumlah mahasiswa dari keyboard dulu
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+
+        // pakai konstruktor berparameter
+        MahasiswaBerprestasi20 list = new MahasiswaBerprestasi20(jumMhs);
 
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
